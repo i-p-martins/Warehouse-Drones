@@ -9,4 +9,13 @@ The results revealed that the sparse reward function allowed for faster converge
 
 This project provides valuable insights into the impact of reward functions on RL agents' learning behaviours and collaboration in warehouse automation environments. The findings serve as a foundation for future research to enhance the adaptability and performance of RL agents in complex and dynamic scenarios.
 
-Video Explanation at: [https://drive.google.com/file/d/1M1khW3AflVkJv29091FBFuwIBCy50eZv/view?usp=drive_link]
+DroneMA.py - The environment that uses the dense reward function
+DroneMA_Sparse - The environment that uses the sparse reward function
+DroneMALoad - A file used to apply a wrapper to DroneMA_Sparse when it is loaded by DroneMATrainer.
+DroneMALoad - A file used to apply a wrapper to DroneMA when it is loaded by DroneMATrainer.
+DroneMATrainer - The Code used to train the drones on either environment
+
+Both environments are capable of single agent and multi agent training, but the amount of agents in the environment need to be changed manually.
+Maps can be changed by editing the map variable in both init and reinit.
+
+Video Description at: [https://drive.google.com/file/d/1M1khW3AflVkJv29091FBFuwIBCy50eZv/view?usp=drive_link]
